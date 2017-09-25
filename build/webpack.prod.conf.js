@@ -27,7 +27,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new CleanWebpackPlugin(config.build.assetsRoot, {
-      root: config.build.assetsPublicPath,
+      root: '/',
       verbose: true
   }),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
