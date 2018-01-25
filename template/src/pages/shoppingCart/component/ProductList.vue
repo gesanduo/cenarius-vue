@@ -1,7 +1,6 @@
 <template>
   <ul>
     <li v-for="(product,index) in products" :key='index'>
-      <!-- {{ product.title }} - {{ product.price | currency }} -->
       <br>
       <button
         :disabled="!product.inventory"
