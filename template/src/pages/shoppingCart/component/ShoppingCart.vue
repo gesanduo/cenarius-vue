@@ -4,10 +4,9 @@
     <p v-show="!products.length"><i>Please add some products to cart.</i></p>
     <ul>
       <li v-for="(product,index) in products" :key='index'>
-        {{ product.title }} - {{ product.price | currency }} x {{ product.quantity }}
       </li>
     </ul>
-    <p>Total: {{ total | currency }}</p>
+    <p>Total: </p>
     <p><button :disabled="!products.length" @click="checkout(products)">Checkout</button></p>
     <p v-show="checkoutStatus">Checkout {{ checkoutStatus }}.</p>
   </div>
