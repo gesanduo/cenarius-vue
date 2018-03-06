@@ -114,7 +114,7 @@ module.exports = vuxLoader.merge(webpackConfig, {
     name: 'progress-bar'
   }, {
     name: 'duplicate-style',
-  }, {
+  }{{#auto_router}}, {
     name: 'js-parser',
     test: /src[\/\\]modules[\/\\]\w+[\/\\]router[\/\\]index\.js/,
     fn: function (source) {
@@ -139,7 +139,7 @@ module.exports = vuxLoader.merge(webpackConfig, {
         'hash': hash
       })
     }
-  }]
+  }{{/auto_router}}]
 })
 {{else}}
 module.exports = webpackConfig
