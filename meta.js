@@ -203,9 +203,8 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/modules/**/router/**/*': 'router',
-    'src/modules/demo_vux/*': "ui_demo === 'vux'",
-    'src/modules/**/layouts/**/*': 'layouts',
-    'src/modules/**/App.vue': '!layouts'
+    'src/modules/demo_vux/*': "router && auto_router && layouts && (ui_demo === 'vux')",
+    'src/modules/**/layouts/**/*': 'router && layouts'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
