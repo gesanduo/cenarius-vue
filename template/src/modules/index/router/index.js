@@ -15,22 +15,21 @@ Vue.use(VueRouter)
 const routes = [{
   path: '/',
   name: 'index',
-  component: index{{#layouts}},
+  component: index,
   meta: {
     title: '首页',
     layout: 'layout-default'
-  }{{/layouts}}
+  }
 }, {
   path: '/HelloWorld',
   name: 'HelloWorld',
-  component: HelloWorld{{#layouts}},
+  component: HelloWorld,
   meta: {
     title: '首页',
     layout: 'layout-home'
-  }{{/layouts}}
+  }
 }]
 {{/unless}}
-
 const router = new VueRouter({
   mode: 'hash',
   base: __dirname,
