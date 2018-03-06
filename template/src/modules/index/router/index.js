@@ -3,6 +3,9 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+{{#unless auto_router}}
+import HelloWorld from '../pages/HelloWorld'
+{{/unless}}
 
 Vue.use(VueRouter)
 
