@@ -5,7 +5,6 @@ const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
 const vuxLoader = require('vux-loader')
-const markdown = require('./webpack.markdown.js')
 const webpack = require('webpack')
 
 const glob = require('glob')
@@ -86,11 +85,6 @@ let webpackConfig = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
-      {
-        test: /\.md$/,
-        loader: 'vue-markdown-loader',
-        options: markdown.getMarkDownSetting()
       }
     ]
   },
