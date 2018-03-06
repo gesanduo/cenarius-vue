@@ -9,7 +9,7 @@ Vue.use(VueRouter)
 {{#unless auto_router}}
 // 自己定义路由
 const routes = []
-{{/auto_router}}
+{{/unless}}
 
 const router = new VueRouter({
   mode: 'hash',
