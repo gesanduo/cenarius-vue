@@ -13,7 +13,7 @@ const routes = [{
   name: 'HelloWorld',
   component: HelloWorld
 }]
-{{/auto_router}}
+{{/unless}}
 
 const router = new VueRouter({
   mode: 'hash',
