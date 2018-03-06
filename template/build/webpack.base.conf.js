@@ -89,7 +89,7 @@ let webpackConfig = {
       }
     ]
   },
-  {{auto_router}}
+  {{#auto_router}}
   // TODO: 应该写一个通用的自动生成路由的插件
   {{/auto_router}}
   node: {
