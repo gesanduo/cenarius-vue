@@ -1,4 +1,4 @@
-<template> 
+<template>
   <div>
     <group title="登录信息" class="weui-cells_form">
       <x-input title="用户名" name="username" placeholder="请输入用户名" :max="20"></x-input>
@@ -10,7 +10,7 @@
     <div style="padding:15px;">
       <x-button @click.native="onEnter" type="primary">确认登录</x-button>
     </div>
-  </div> 
+  </div>
 </template>
 
 <routeMeta>

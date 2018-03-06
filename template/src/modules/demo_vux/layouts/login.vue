@@ -10,23 +10,23 @@
 </template>
 
 <script>
-  import { TransferDom, Loading } from 'vux'
-  import { mapState } from 'vuex'
+import { TransferDom, Loading } from 'vux'
+import { mapState } from 'vuex'
 
-  export default {
-    name: 'layout-login',
-    directives: {
-      TransferDom
-    },
-    components: {
-      Loading
-    },
-    computed: {
-      ...mapState({
-        isLoading: state => state.vux.isLoading
-      })
-    }
+export default {
+  name: 'layout-login',
+  directives: {
+    TransferDom
+  },
+  components: {
+    Loading
+  },
+  computed: {
+    ...mapState({
+      isLoading: state => state.vux.isLoading
+    })
   }
+}
 </script>
 
 <style lang="less">

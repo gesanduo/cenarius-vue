@@ -17,60 +17,60 @@
                 :name="viewTransition">
         <router-view class="router-view"></router-view>
       </transition>
-    </view-box>  
+    </view-box>
   </div>
 </template>
 
 <script>
-  import { ViewBox, XHeader, TransferDom, Loading } from 'vux'
-  import { mapState } from 'vuex'
+import { ViewBox, XHeader, TransferDom, Loading } from 'vux'
+import { mapState } from 'vuex'
 
-  export default {
-    name: 'layout-detail',
-    directives: {
-      TransferDom
-    },
-    components: {
-      ViewBox,
-      XHeader,
-      Loading
-    },
-    methods: {
-      onClickMore () {
-        this.$vux.bus.$emit('onShowMenu')
+export default {
+  name: 'layout-detail',
+  directives: {
+    TransferDom
+  },
+  components: {
+    ViewBox,
+    XHeader,
+    Loading
+  },
+  methods: {
+    onClickMore () {
+      this.$vux.bus.$emit('onShowMenu')
+    }
+  },
+  computed: {
+    ...mapState({
+      route: state => state.route,
+      path: state => state.route.path,
+      deviceready: state => state.app.deviceready,
+      isLoading: state => state.vux.isLoading,
+      direction: state => state.vux.direction
+    }),
+    leftOptions () {
+      return {
+        showBack: this.route.meta.showBack
       }
     },
-    computed: {
-      ...mapState({
-        route: state => state.route,
-        path: state => state.route.path,
-        deviceready: state => state.app.deviceready,
-        isLoading: state => state.vux.isLoading,
-        direction: state => state.vux.direction
-      }),
-      leftOptions () {
-        return {
-          showBack: this.route.meta.showBack
-        }
-      },
-      rightOptions () {
-        return {
-          showMore: this.route.meta.showMore
-        }
-      },
-      headerTransition () {
-        if (!this.direction) return ''
-        return this.direction === 'forward' ? 'vux-header-fade-in-right' : 'vux-header-fade-in-left'
-      },
-      title () {
-        return this.route.meta.title
-      },
-      viewTransition () {
-        if (!this.direction) return ''
-        return 'vux-pop-' + (this.direction === 'forward' ? 'in' : 'out')
+    rightOptions () {
+      return {
+        showMore: this.route.meta.showMore
       }
+    },
+    headerTransition () {
+      if (!this.direction) return ''
+      return this.direction === 'forward' ? 'vux-header-fade-in-right' : 'vux-header-fade-in-left'
+    },
+    title () {
+      return this.route.meta.title
+    },
+    viewTransition () {
+      if (!this.direction) return ''
+      return 'vux-pop-' + (this.direction === 'forward' ? 'in' : 'out')
     }
   }
+}
 </script>
 
 <style lang="less">

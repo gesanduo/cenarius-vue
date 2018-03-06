@@ -35,54 +35,54 @@
           <span slot="label">我</span>
         </tabbar-item>
       </tabbar>
-    </view-box>  
+    </view-box>
   </div>
 </template>
 
 <script>
-  import { ViewBox, Tabbar, TabbarItem, XHeader, TransferDom, Loading } from 'vux'
-  import { mapState } from 'vuex'
+import { ViewBox, Tabbar, TabbarItem, XHeader, TransferDom, Loading } from 'vux'
+import { mapState } from 'vuex'
 
-  export default {
-    name: 'layout-home',
-    directives: {
-      TransferDom
-    },
-    components: {
-      ViewBox,
-      Tabbar,
-      TabbarItem,
-      XHeader,
-      Loading
-    },
-    methods: {
-      onClickMore () {
-        this.$vux.bus.$emit('onShowMenu')
+export default {
+  name: 'layout-home',
+  directives: {
+    TransferDom
+  },
+  components: {
+    ViewBox,
+    Tabbar,
+    TabbarItem,
+    XHeader,
+    Loading
+  },
+  methods: {
+    onClickMore () {
+      this.$vux.bus.$emit('onShowMenu')
+    }
+  },
+  computed: {
+    ...mapState({
+      route: state => state.route,
+      path: state => state.route.path,
+      deviceready: state => state.app.deviceready,
+      isLoading: state => state.vux.isLoading,
+      direction: state => state.vux.direction
+    }),
+    leftOptions () {
+      return {
+        showBack: this.route.meta.showBack
       }
     },
-    computed: {
-      ...mapState({
-        route: state => state.route,
-        path: state => state.route.path,
-        deviceready: state => state.app.deviceready,
-        isLoading: state => state.vux.isLoading,
-        direction: state => state.vux.direction
-      }),
-      leftOptions () {
-        return {
-          showBack: this.route.meta.showBack
-        }
-      },
-      rightOptions () {
-        return {
-          showMore: this.route.meta.showMore
-        }
-      },
-      title () {
-        return this.route.meta.title
+    rightOptions () {
+      return {
+        showMore: this.route.meta.showMore
       }
+    },
+    title () {
+      return this.route.meta.title
     }
   }
+}
 </script>
 
 <style lang="less">
@@ -94,5 +94,5 @@
   .router-view {
     width: 100%;
     top: 46px;
-  } 
+  }
 </style>

@@ -15,16 +15,16 @@
 </routeMeta>
 
 <script>
-  import { ViewBox, Tabbar, TabbarItem, XHeader, Loading } from 'vux'
+import { ViewBox, Tabbar, TabbarItem, XHeader, Loading } from 'vux'
 
-  export default {
-    name: 'app',
-    components: {
-      ViewBox,
-      Tabbar,
-      TabbarItem,
-      XHeader,
-      Loading
-    }
+export default {
+  name: 'app',
+  components: {
+    ViewBox,
+    Tabbar,
+    TabbarItem,
+    XHeader,
+    Loading
   }
+}
 </script>
