@@ -7,6 +7,7 @@ const {
   runLintFix,
   printMessage,
 } = require('./utils')
+
 const pkg = require('./package.json')
 
 const templateVersion = pkg.version
@@ -78,6 +79,11 @@ module.exports = {
       when: 'isNotTest && router',
       type: 'confirm',
       message: 'Automatically generates the vue-router configuration?'
+    },
+    layouts: {
+      when: 'isNotTest && router',
+      type: 'confirm',
+      message: 'Support dynamic layout?'
     },
     lint: {
       when: 'isNotTest',

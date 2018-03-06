@@ -90,7 +90,7 @@ let webpackConfig = {
     ]
   },
   {{#auto_router}}
-  // TODO: 应该写一个通用的自动生成路由的插件
+  // TODO: 应该写一个通用的自动生成路由的插件，同时修改router/index.js为自动路由样式<%_routes%>
   {{/auto_router}}
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
