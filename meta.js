@@ -203,7 +203,9 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/modules/**/router/**/*': 'router',
-    'src/modules/demo_vux/*': "router && auto_router && layouts && (ui_demo === 'vux')",
+    'build/template/router.js': 'router && auto_router',
+    'src/modules/demo_vux/**/*': "router && auto_router && layouts && (ui_demo === 'vux')",
+    'src/plugins/layout.js': 'router && layouts',
     'src/modules/**/layouts/**/*': 'router && layouts'
   },
   complete: function(data, { chalk }) {
