@@ -2,6 +2,8 @@
 /config/
 /dist/
 /*.js
+/src/assets/js/**/*.js
+/src/modules/**/router/index.js
 {{#unit}}
 /test/unit/coverage/
 {{/unit}}
