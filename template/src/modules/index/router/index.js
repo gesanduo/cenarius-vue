@@ -4,6 +4,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 {{#unless auto_router}}
+import index from '../pages/index'
 import HelloWorld from '../pages/HelloWorld'
 {{/unless}}
 
@@ -13,6 +14,10 @@ Vue.use(VueRouter)
 // 自己定义路由
 const routes = [{
   path: '/',
+  name: 'index',
+  component: index
+}, {
+  path: '/HelloWorld',
   name: 'HelloWorld',
   component: HelloWorld
 }]

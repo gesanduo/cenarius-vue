@@ -9,11 +9,8 @@ import router from './router'
 import { sync } from 'vuex-router-sync'
 import wechatTitle from 'vue-wechat-title'
 import { DatetimePlugin, CloseDialogsPlugin, ConfigPlugin, BusPlugin, DevicePlugin, ToastPlugin, AlertPlugin, ConfirmPlugin, LoadingPlugin, WechatPlugin, AjaxPlugin, AppPlugin } from 'vux'
-{{#layouts}}
 import { VueExtendLayout, layout } from '../../plugins/layout'
-{{else}}
-import App from './App'
-{{/layouts}}
+
 // 2.处理i18n(暂不处理)
 
 // 3.处理vux状态，加载动画、前进后退、位置
@@ -48,9 +45,7 @@ Vue.use(AjaxPlugin)
 Vue.use(BusPlugin)
 Vue.use(DatetimePlugin)
 
-{{#layouts}}
 Vue.use(VueExtendLayout, {layouts: require.context('./layouts', false, /^\.\/.*\.vue$/)})
-{{/layouts}}
 
 // test?
 if (process.env.platform === 'app') {
@@ -132,11 +127,7 @@ new Vue({
   el: '#app',
   store,
   router,
-  {{#layouts}}
   ...layout,
-  {{else}}
-  render: page => page(App),
-  {{/layouts}}
   http: {
     header: {
       'Content-Type': 'application/json'

@@ -83,6 +83,15 @@
   </div>
 </template>
 
+{{#auto_router}}
+<routeMeta>
+  {
+    title: 'Hello World',
+    layout: 'layout-default'
+  }
+</routeMeta>
+{{/auto_router}}
+
 <script>
 export default {
   name: 'HelloWorld',

@@ -145,7 +145,7 @@ module.exports = {
       message: 'Setup e2e tests with Nightwatch?',
     },
     ui_demo: {
-      when: 'isNotTest',
+      when: 'isNotTest && router && auto_router && layouts',
       type: 'list',
       message: 'Should we include ui demo? (recommended)',
       choices: [
@@ -204,7 +204,8 @@ module.exports = {
     'test/e2e/**/*': 'e2e',
     'src/modules/**/router/**/*': 'router',
     'src/modules/demo_vux/*': "ui_demo === 'vux'",
-    'src/modules/**/layouts/**/*': 'layouts'
+    'src/modules/**/layouts/**/*': 'layouts',
+    'src/modules/**/App.vue': '!layouts'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
