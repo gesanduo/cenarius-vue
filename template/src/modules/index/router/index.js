@@ -15,11 +15,19 @@ Vue.use(VueRouter)
 const routes = [{
   path: '/',
   name: 'index',
-  component: index
+  component: index,
+  meta: {
+    title: '首页',
+    layout: 'layout-default'
+  }
 }, {
   path: '/HelloWorld',
   name: 'HelloWorld',
-  component: HelloWorld
+  component: HelloWorld,
+  meta: {
+    title: '首页',
+    layout: 'layout-home'
+  }
 }]
 {{/unless}}
 
