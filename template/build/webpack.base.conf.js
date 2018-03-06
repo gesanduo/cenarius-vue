@@ -3,9 +3,9 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-{{#vux}}
+{{#if_eq ui_demo "vux"}}
 const vuxLoader = require('vux-loader')
-{{/vux}}
+{{/if_eq}}
 const webpack = require('webpack')
 
 const glob = require('glob')
