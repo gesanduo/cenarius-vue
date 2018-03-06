@@ -3,8 +3,9 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-
+{{#vux}}
 const vuxLoader = require('vux-loader')
+{{/vux}}
 const webpack = require('webpack')
 
 const glob = require('glob')
@@ -88,6 +89,9 @@ let webpackConfig = {
       }
     ]
   },
+  {{auto_router}}
+  // TODO: 应该写一个通用的自动生成路由的插件
+  {{/auto_router}}
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
@@ -102,6 +106,7 @@ let webpackConfig = {
   }
 }
 
+{{#if_eq ui_demo "vux"}}
 module.exports = vuxLoader.merge(webpackConfig, {
   plugins: [{
     name: 'vux-ui'
@@ -136,3 +141,6 @@ module.exports = vuxLoader.merge(webpackConfig, {
     }
   }]
 })
+{{else}}
+module.exports = webpackConfig
+{{/if_eq}}

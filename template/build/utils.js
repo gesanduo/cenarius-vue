@@ -123,6 +123,7 @@ exports.getEntry = function (globPath) {
   return entries;
 }
 
+{{#auto_router}}
 function cleanChildrenRoutes(routes, isChild = false) {
   let start = -1
   let routesIndex = []
@@ -254,3 +255,4 @@ exports.createRoutes = function createRoutes(files, srcDir) {
   })
   return cleanChildrenRoutes(routes)
 }
+{{/auto_router}}

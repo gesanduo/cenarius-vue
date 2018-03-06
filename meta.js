@@ -74,6 +74,11 @@ module.exports = {
       type: 'confirm',
       message: 'Install vue-router?',
     },
+    auto_router: {
+      when: 'isNotTest && router',
+      type: 'confirm',
+      message: 'Automatically generates the vue-router configuration?'
+    },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -133,6 +138,28 @@ module.exports = {
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
     },
+    ui_demo: {
+      when: 'isNotTest',
+      type: 'list',
+      message: 'Should we include ui demo? (recommended)',
+      choices: [
+        {
+          name: 'Yes, use vux ui',
+          value: 'vux',
+          short: 'vux'
+        },
+        {
+          name: 'Yes, use mint ui',
+          value: 'mint',
+          short: 'mint'         
+        },
+        {
+          name: 'No, I will handle that myself',
+          value: false,
+          short: 'no',
+        }
+      ]
+    },
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
@@ -170,6 +197,7 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/modules/**/router/**/*': 'router',
+    'src/modules/demo_vux/*': 'vux'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
