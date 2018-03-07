@@ -58,7 +58,7 @@ let webpackConfig = {
         use: [{
           loader: 'babel-loader'
         }{{#auto_router}}, {
-          loader: path.resolve('./build/loaders/router-loader')
+          loader: resolve('build/loaders/router-loader')
         }{{/auto_router}}],
         include: [resolve('src'), resolve('test')]
       },

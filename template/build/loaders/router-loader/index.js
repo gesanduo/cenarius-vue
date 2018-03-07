@@ -1,6 +1,7 @@
 /**
  * 自定义loader，处理自动化路由
  */
+const path = require('path')
 const utils = require('../../utils')
 const glob = require('glob')
 const fs = require('fs')
@@ -24,7 +25,7 @@ module.exports = function (source, map) {
 
     let routes = utils.createRoutes(Object.values(files), srcDir)
     // 读取路由模板
-    const routeTemplate = fs.readFileSync('build/template/router.js', 'utf-8')
+    const routeTemplate = fs.readFileSync(path.join(__dirname, 'router.js'), 'utf-8')
     const template = _.template(routeTemplate + '\n' + source)
     return template({
       'routes': routes,
