@@ -8,11 +8,6 @@ const vuxLoader = require('vux-loader')
 {{/if_eq}}
 const webpack = require('webpack')
 
-const glob = require('glob')
-const fs = require('fs')
-const _ = require('lodash')
-const hash = require('hash-sum')
-
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
@@ -60,7 +55,11 @@ let webpackConfig = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        use: [{
+          loader: 'babel-loader'
+        }{{#auto_router}}, {
+          loader: path.resolve('./build/loaders/router-loader')
+        }{{/auto_router}}],
         include: [resolve('src'), resolve('test')]
       },
       {
@@ -89,9 +88,6 @@ let webpackConfig = {
       }
     ]
   },
-  {{#auto_router}}
-  // TODO: 应该写一个通用的自动生成路由的插件和vux loader剥离开来，以支持其他UI
-  {{/auto_router}}
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
@@ -114,32 +110,7 @@ module.exports = vuxLoader.merge(webpackConfig, {
     name: 'progress-bar'
   }, {
     name: 'duplicate-style',
-  }{{#auto_router}}, {
-    name: 'js-parser',
-    test: /src[\/\\]modules[\/\\]\w+[\/\\]router[\/\\]index\.js/,
-    fn: function (source) {
-      const srcDir = this.resourcePath.replace(/[\/\\]router[\/\\]index.js/, "")
-      const files = {}
-      glob.sync('pages/**/*.{vue,js}', {
-        cwd: srcDir
-      }).forEach(f => {
-        const key = f.replace(/\.(js|vue)$/, '')
-        if (/\.vue$/.test(f) || !files[key]) {
-          files[key] = f
-        }
-      })
-
-      let routes = utils.createRoutes(Object.values(files), srcDir)
-      // 读取路由模板
-      const route_template = fs.readFileSync('build/template/router.js', 'utf-8')
-      const template = _.template(route_template + '\n' + source)
-      return template({
-        'routes': routes,
-        'uniqBy': _.uniqBy,
-        'hash': hash
-      })
-    }
-  }{{/auto_router}}]
+  }]
 })
 {{else}}
 module.exports = webpackConfig
