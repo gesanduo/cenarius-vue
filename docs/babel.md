@@ -16,7 +16,7 @@ However there is a caveat. `browserslist` recommends defining the target in a co
 {
   "...": "...",
   "browserslist": [ 
-    "> 1%",全球浏览器使用率大于5%
+    "> 1%",全球浏览器使用率大于1%
     "last 2 versions", 每个浏览器中最新的两个版本。
     "not ie <= 8"
   ]
