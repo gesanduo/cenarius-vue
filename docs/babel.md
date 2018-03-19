@@ -1,10 +1,8 @@
-# Babel Configuration
+# Babel 配置
 
-This boilerplate uses [`babel-preset-env`](https://www.npmjs.com/package/babel-preset-env) for configuring babel. You can read more about it here - http://2ality.com/2017/02/babel-preset-env.html.
-该样板使用[`babel-preset-env`]（https://www.npmjs.com/package/babel-preset-env）来配置babel。 你可以在以下链接阅读到更多相关信息 - http://2ality.com/2017/02/babel-preset-env.html。
+本模板使用[`babel-preset-env`]（https://www.npmjs.com/package/babel-preset-env）来配置babel。 你可以在以下链接阅读到更多相关信息 - http://2ality.com/2017/02/babel-preset-env.html。
 
-> A Babel preset that compiles ES2015+ down to ES5 by automatically determining the Babel plugins and polyfills you need based on your targeted browser or runtime environments.
-> 自动根据您的目标浏览器或运行时环境来确定所需的Babel插件和填充，从而将ES2015 +编译为ES5的Babel预设。
+> 通过自动根据您的目标浏览器或运行时环境来确定所需的Babel plugin 和 polyfill，从而将ES2015+编译为ES5。
 
 It uses [`browserslist`](https://github.com/ai/browserslist) to parse this information, so we can use any [valid query format supported by `browserslist`](https://github.com/ai/browserslist#queries).
 它使用[`browserslist`]（https://github.com/ai/browserslist）来解析这些信息，因此我们可以使用任何[browserslist`来有效查询支持的格式](https://github.com/ai/browserslist#queries).
