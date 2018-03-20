@@ -6,7 +6,7 @@
   "build": "runtime",
   "router": false,
   "lint": true,
-  "lintConfig": "standard",
+  "lintConfig": "cenarius",
   "unit": true,
   "runner": "jest",
   "e2e": true,

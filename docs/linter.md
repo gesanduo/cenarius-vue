@@ -1,7 +1,7 @@
 # Linter Configuration
 
 This boilerplate uses [ESLint](https://eslint.org/) as the linter, and uses the [Standard](https://github.com/feross/standard/blob/master/RULES.md) preset with some small customizations.
-该样板使用[ESLint]（https://eslint.org/）作为linter，并使用[Standard]（https://github.com/feross/standard/blob/master/RULES.md）预设 小的定制。
+该样板使用[ESLint]（https://eslint.org/）作为linter，并使用[]（https://github.com/feross/standard/blob/master/RULES.md）预设 小的定制。
 
 ## eslint-plugin-vue
 

@@ -6,7 +6,7 @@
   "build": "standalone",
   "router": false,
   "lint": true,
-  "lintConfig": "airbnb",
+  "lintConfig": "cenarius-base",
   "unit": true,
   "runner": "karma",
   "e2e": true,

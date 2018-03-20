@@ -8,19 +8,19 @@ module.exports = {
   env: {
     browser: true,
   },
-  {{#if_eq lintConfig "standard"}}
+  {{#if_eq lintConfig "cenarius"}}
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
     'plugin:vue/essential', 
-    // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-    'standard'
+    // https://www.npmjs.com/package/eslint-config-cenarius
+    'cenarius'
   ],
   {{/if_eq}}
-  {{#if_eq lintConfig "airbnb"}}
+  {{#if_eq lintConfig "cenarius-base"}}
   // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
   // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-  extends: ['plugin:vue/essential', 'airbnb-base'],
+  extends: ['plugin:vue/essential', 'cenarius-base'],
   {{/if_eq}}
   {{#if_eq lintConfig "none"}}
   // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
@@ -31,7 +31,7 @@ module.exports = {
   plugins: [
     'vue'
   ],
-  {{#if_eq lintConfig "airbnb"}}
+  {{#if_eq lintConfig "cenarius-base"}}
   // check if imports actually resolve
   settings: {
     'import/resolver': {
@@ -43,11 +43,11 @@ module.exports = {
   {{/if_eq}}
   // add your custom rules here
   rules: {
-    {{#if_eq lintConfig "standard"}}
+    {{#if_eq lintConfig "cenarius"}}
     // allow async-await
     'generator-star-spacing': 'off',
     {{/if_eq}}
-    {{#if_eq lintConfig "airbnb"}}
+    {{#if_eq lintConfig "cenarius-base"}}
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',
