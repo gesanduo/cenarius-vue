@@ -38,19 +38,19 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: '项目名称',
+      message: 'Project name',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: '项目描述',
+      message: 'Project description',
       default: 'A Vue.js project',
     },
     author: {
       when: 'isNotTest',
       type: 'string',
-      message: '作者',
+      message: 'Author',
     },
     build: {
       when: 'isNotTest',
@@ -58,7 +58,7 @@ module.exports = {
       message: 'Vue build',
       choices: [
         {
-          name: 'Runtime + Compiler: 推荐给大多数用户',
+          name: 'Runtime + Compiler: recommended for most users',
           value: 'standalone',
           short: 'standalone',
         },
@@ -73,40 +73,40 @@ module.exports = {
     router: {
       when: 'isNotTest',
       type: 'confirm',
-      message: '安装 vue-router ?',
+      message: 'Install vue-router?',
     },
     auto_router: {
       when: 'isNotTest && router',
       type: 'confirm',
-      message: '自动生成 vue-router 配置 ?'
+      message: 'Automatically generates the vue-router configuration?'
     },
     layouts: {
       when: 'isNotTest && router',
       type: 'confirm',
-      message: '支持 dynamic layout ?'
+      message: 'Support dynamic layout?'
     },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
-      message: '使用 ESLint 检查代码 ?',
+      message: 'Use ESLint to lint your code?',
     },
     lintConfig: {
       when: 'isNotTest && lint',
       type: 'list',
-      message: '选择一种 ESLint preset',
+      message: 'Pick an ESLint preset',
       choices: [
         {
-          name: 'Cenarius (https://www.npmjs.com/package/eslint-config-cenarius)',
-          value: 'cenarius',
-          short: 'Cenarius',
+          name: 'Standard (https://github.com/standard/standard)',
+          value: 'standard',
+          short: 'Standard',
         },
         {
-          name: 'Cenarius-base (https://www.npmjs.com/package/eslint-config-cenarius-base)',
-          value: 'cenarius-base',
-          short: 'Cenarius-base',
+          name: 'Airbnb (https://github.com/airbnb/javascript)',
+          value: 'airbnb',
+          short: 'Airbnb',
         },
         {
-          name: 'none (自行配置)',
+          name: 'none (configure it yourself)',
           value: 'none',
           short: 'none',
         },
@@ -115,12 +115,12 @@ module.exports = {
     unit: {
       when: 'isNotTest',
       type: 'confirm',
-      message: '设置单元测试',
+      message: 'Set up unit tests',
     },
     runner: {
       when: 'isNotTest && unit',
       type: 'list',
-      message: '选择一种 test runner',
+      message: 'Pick a test runner',
       choices: [
         {
           name: 'Jest',
@@ -133,7 +133,7 @@ module.exports = {
           short: 'karma',
         },
         {
-          name: 'none (自行配置)',
+          name: 'none (configure it yourself)',
           value: 'noTest',
           short: 'noTest',
         },
@@ -142,25 +142,25 @@ module.exports = {
     e2e: {
       when: 'isNotTest',
       type: 'confirm',
-      message: '使用 Nightwatch 进行 e2e 测试 ?',
+      message: 'Setup e2e tests with Nightwatch?',
     },
     ui_demo: {
       when: 'isNotTest && router && auto_router && layouts',
       type: 'list',
-      message: '安装 ui demo ? (推荐)',
+      message: 'Should we include ui demo? (recommended)',
       choices: [
         {
-          name: 'Yes, 使用 vux ui',
+          name: 'Yes, use vux ui',
           value: 'vux',
           short: 'vux'
         },
         {
-          name: 'Yes, 使用 mint ui',
+          name: 'Yes, use mint ui',
           value: 'mint',
           short: 'mint'         
         },
         {
-          name: 'No, 我自行搞定',
+          name: 'No, I will handle that myself',
           value: false,
           short: 'no',
         }
@@ -170,20 +170,20 @@ module.exports = {
       when: 'isNotTest',
       type: 'list',
       message:
-        '项目创建后自动运行 `npm install` ? (推荐)',
+        'Should we run `npm install` for you after the project has been created? (recommended)',
       choices: [
         {
-          name: 'Yes, 使用 NPM',
+          name: 'Yes, use NPM',
           value: 'npm',
           short: 'npm',
         },
         {
-          name: 'Yes, 使用 Yarn',
+          name: 'Yes, use Yarn',
           value: 'yarn',
           short: 'yarn',
         },
         {
-          name: 'No, 我自行搞定',
+          name: 'No, I will handle that myself',
           value: false,
           short: 'no',
         },
