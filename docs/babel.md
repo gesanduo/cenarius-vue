@@ -19,5 +19,5 @@
 }
 ```
 
-但是`babel-preset-env`最新稳定版本，`v1.6.1`不支持从`package.json`加载配置。 所以目标环境在`.babelrc`中又重复了一遍。所以如果你想改变你的目标环境，请务必更新`package.json`和`.babelrc`。 请注意，beta版本中已经修复（[`@ babel / preset-env @ 7.0.0-beta.34`]（https://github.com/babel/babel/tree/master/packages/babel- preset-env））了这个问题，模板会持续跟进。
+但是`babel-preset-env`最新稳定版本，`v1.6.1`不支持从`package.json`加载配置。 所以目标环境在`.babelrc`中又重复了一遍。所以如果你想改变你的目标环境，请务必更新`package.json`和`.babelrc`。 请注意，beta版本中已经修复（[`@ babel/preset-env@7.0.0-beta.34`]（https://github.com/babel/babel/tree/master/packages/babel- preset-env））了这个问题，模板会持续跟进。
 

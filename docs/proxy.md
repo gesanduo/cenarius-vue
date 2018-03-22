@@ -1,4 +1,4 @@
-# API Proxying During Development
+# 开发期间的API代理
 
 When integrating this boilerplate with an existing backend, a common need is to access the backend API when using the dev server. To achieve that, we can run the dev server and the API backend side-by-side (or remotely), and let the dev server proxy all API requests to the actual backend.
 将此样板与现有后端集成时，通常需要在使用开发服务器时访问后端API。 为此，我们可以并行（或远程）运行开发服务器和API后端，并让开发服务器将所有API请求代理到实际的后端。

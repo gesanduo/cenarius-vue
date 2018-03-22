@@ -1,4 +1,4 @@
-# Handling Static Assets
+# 处理 Static Assets
 
 You will notice in the project structure we have two directories for static assets: `src/assets` and `static/`. What is the difference between them?
 你会注意到项目结构用2个静态资源的目录：`src/assets` 和 `static/`，他们的区别是什么？
