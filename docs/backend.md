@@ -64,7 +64,6 @@ module.exports = {
 
 ### `build.assetsPublicPath`
 
-This should be the URL path where your `build.assetsRoot` will be served from over HTTP. In most cases, this will be root (`/`). Only change this if your backend framework serves static assets with a path prefix. Internally, this is passed to Webpack as `output.publicPath`.
 这是你的`build.assetsRoot`通过HTTP提供的URL路径。 在大多数情况下，这将是根路径（`/`）。 只有在后端框架为静态资源提供前缀时才更改此设置。 在内部，它作为`output.publicPath`传递给Webpack。
 
 ### `build.productionSourceMap`
