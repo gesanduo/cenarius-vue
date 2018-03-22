@@ -4,11 +4,11 @@
 import 'es6-promise/auto'
 import Vue from 'vue'
 import FastClick from 'fastclick'
-import store from './store'
-import router from './router'
 import { sync } from 'vuex-router-sync'
 import wechatTitle from 'vue-wechat-title'
 import { DatetimePlugin, CloseDialogsPlugin, ConfigPlugin, BusPlugin, DevicePlugin, ToastPlugin, AlertPlugin, ConfirmPlugin, LoadingPlugin, WechatPlugin, AjaxPlugin, AppPlugin } from 'vux'
+import store from './store'
+import router from './router'
 import { VueExtendLayout, layout } from '../../plugins/layout'
 
 // 2.处理i18n(暂不处理)
