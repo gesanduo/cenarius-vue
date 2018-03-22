@@ -31,7 +31,7 @@ npm run e2e
 npm test
 {{/if_or}}
 ```
-For a detailed explanation on how things work, check out the [guide](http://macula.top/cenarius-vux) and [docs for vue-loader](http://vuejs.github.io/vue-loader) and [docs for vux](http://vux.li).
+有关详情，请查看[guide](http://macula.top/cenarius-vux) 、[docs for vue-loader](http://vuejs.github.io/vue-loader) 和 [docs for vux](http://vux.li).
 
 
 ## 项目说明
@@ -45,15 +45,22 @@ src/                  // 项目源码
 --| components/       // 所有页面共享的vue组件
 --| modules/          // 各个模块源码存放处
 ----| index/          // 应用的入口模块，一般情况下必须要有这个目录
+------| assets/       //  存放index模块的图片、js、css等静态资源
+------| layouts/      //  index模块的私有组件
+------| pages/        //  index模块的页面，路由指向这里，不可在其他页面当组件使用
+------| router/         
+--------| index.js    //  index模块的页面路由
 ------| App.vue       // 主页面
 ------| index.html    // webpack预编译html入口，文件名与模块名一致
 ------| index.js      // webpack预编译入口，文件名与模块名一致
 ------| ......        // 其他与demo目录一致  
 
-----| demo/           //  demo模块对应源码
+----| demo_vux/       //  demo模块对应源码
 ------| assets/       //  存放demo模块的图片、js、css等静态资源
+--------| images      //  存放demo模块的图片
 ------| components/   //  demo模块的私有组件  
 ------| layouts/      //  demo模块的布局页，App.vue不再起作用
+------| mock/         //  存放demo模块的模拟数据
 ------| pages/        //  demo模块的页面，路由指向这里，不可在其他页面当组件使用
 ------| router/         
 --------| index.js    //  demo模块的页面路由
@@ -64,7 +71,8 @@ src/                  // 项目源码
 ------| App.vue       // 主页面
 ------| demo.html     // webpack预编译html入口，文件名与模块名一致
 ------| demo.js       // webpack预编译入口，文件名与模块名一致
-
+--| plugins/ 
+----| layout.js/      // 布局页的配置
 static/               // 直接被拷贝到build的文件
 test/                 // 测试脚本
 ```
