@@ -155,9 +155,9 @@ module.exports = {
           short: 'vux'
         },
         {
-          name: 'Yes, use mint ui',
-          value: 'mint',
-          short: 'mint'         
+          name: 'Yes, use vant ui',
+          value: 'vant',
+          short: 'vant'         
         },
         {
           name: 'No, I will handle that myself',
@@ -205,6 +205,7 @@ module.exports = {
     'src/modules/**/router/**/*': 'router',
     'build/template/router.js': 'router && auto_router',
     'src/modules/demo_vux/**/*': "router && auto_router && layouts && (ui_demo === 'vux')",
+    'src/modules/demo_vant/**/*': "router && auto_router && layouts && (ui_demo === 'vant')",
     'src/plugins/layout.js': 'router && layouts',
     'src/modules/**/layouts/**/*': 'router && layouts'
   },
