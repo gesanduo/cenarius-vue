@@ -38,10 +38,9 @@
     "es6-promise": "^4.2.4",
     "fastclick": "^1.0.6",
     "vue-wechat-title": "^2.0.4"{{#if_eq ui_demo "vux"}},
-    "vux": "^2.2.0"
-    {{/if_eq}}
-    {{#if_eq ui_demo "vant"}},
-    "vant": "^1.0.2"
+    "vux": "^2.2.0"{{/if_eq}}{{#if_eq ui_demo "vant"}},
+    "vant": "^1.0.2",
+    "vant-css": "^1.0.0"
     {{/if_eq}}
   },
   "devDependencies": {
