@@ -28,13 +28,13 @@
     <group-title> 自定义内容 </group-title>
     <grid>
       <grid-item v-for="i in 5" :key="i">
-        <span class="grid-center">{{i}}</span>
+        <span class="grid-center">\{{i}}</span>
       </grid-item>
     </grid>
     <group-title> 自定义列 </group-title>
     <grid :cols="3">
       <grid-item v-for="i in 6" :key="i">
-        <span class="grid-center">{{i}}</span>
+        <span class="grid-center">\{{i}}</span>
       </grid-item>
     </grid>
   </div>

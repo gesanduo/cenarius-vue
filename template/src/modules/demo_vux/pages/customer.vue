@@ -2,7 +2,7 @@
   <div>
     <x-button type="primary" @click.native="onBtnClick">我的顾客</x-button>
     <div>
-      <p v-for="i in 100" :key="i">{{i}}</p>
+      <p v-for="i in 100" :key="i">\{{i}}</p>
     </div>
     <actionsheet v-model="showMenu" :menus="menus"></actionsheet>
   </div>

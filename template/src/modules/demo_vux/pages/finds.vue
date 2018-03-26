@@ -2,7 +2,7 @@
   <div>
     <x-button type="primary" @click.native="onBtnClick">发现</x-button>
     <div>
-      <p v-for="i in 5" :key="i">{{i}}</p>
+      <p v-for="i in 5" :key="i">\{{i}}</p>
     </div>
     <actionsheet v-model="showMenu" :menus="menus"></actionsheet>
   </div>
