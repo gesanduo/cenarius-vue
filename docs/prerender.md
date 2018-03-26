@@ -1,7 +1,7 @@
 # Prerendering for SEO
 
 If you want to prerender routes that will not significantly change once pushed to production, use this Webpack plugin: [prerender-spa-plugin](https://www.npmjs.com/package/prerender-spa-plugin), which has been tested for use with Vue. For pages that _do_ frequently change, [Prerender.io](https://prerender.io/) and [Netlify](https://www.netlify.com/pricing) both offer plans for regularly re-prerendering your content for search engines.
-如果你想预先渲染一次推送到production时不会发生显着变化的路线，请使用这个Webpack插件：[prerender-spa-plugin](https://www.npmjs.com/package/prerender-spa-plugin)，它有已经通过Vue使用测试。 对于频繁更改的网页，[Prerender.io](https://prerender.io/) 和 [Netlify](https://www.netlify.com/pricing)都会提供定期重新预渲染内容的计划搜索引擎。
+如果你想预先渲染一次推送到production时不会发生显着变化的路线，请使用这个Webpack插件：[prerender-spa-plugin](https://www.npmjs.com/package/prerender-spa-plugin)，它已经通过Vue使用测试。 对于频繁更改的网页，[Prerender.io](https://prerender.io/) 和 [Netlify](https://www.netlify.com/pricing)都会提供定期重新预渲染内容的计划搜索引擎。
 
 ## Using `prerender-spa-plugin`
 
