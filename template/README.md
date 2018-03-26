@@ -115,6 +115,9 @@ Mockjs会直接拦截你的AJAX请求，避免需要改动你的代码来切换m
 ### Vux组件使用
 项目默认已经集成了vux组件库，可以直接引用，具体请参考 https://vux.li
 
+### Vant组件使用
+项目默认已经集成了vant组件库，可以直接引用，具体请参考https://www.youzanyun.com/zanui/vant#/zh-CN/quickstart
+
 ### 环境参数
 正常开发时，有时需要不同的环境有不同的配置参数，比如后端URL地址等信息，你可以打开config目录，默认分为dev、test、staging、prod四套环境，可以仿照profile的定义，注意由于这里的参数会照样替换到你的程序中，所以是有两个引号的。使用这些参数的方式是 process.env.xxx。
 
