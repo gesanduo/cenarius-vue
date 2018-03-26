@@ -38,7 +38,9 @@
     "es6-promise": "^4.2.4",
     "fastclick": "^1.0.6",
     "vue-wechat-title": "^2.0.4"{{#if_eq ui_demo "vux"}},
-    "vux": "^2.2.0"
+    "vux": "^2.2.0"{{/if_eq}}{{#if_eq ui_demo "vant"}},
+    "vant": "^1.0.2",
+    "vant-css": "^1.0.0"
     {{/if_eq}}
   },
   "devDependencies": {
@@ -64,6 +66,9 @@
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",
     "vue-jest": "^1.0.2",
+    {{/if_eq}}
+    {{#if_eq ui_demo "vant"}}
+    "babel-plugin-import": "^1.6.7",
     {{/if_eq}}
     {{#if_eq runner "karma"}}
     "karma": "^1.4.1",
