@@ -34,7 +34,7 @@ Styles in `*.vue` files and style files (`*.css`, `*.scss` etc) are piped throug
 `* .vue`文件和样式文件（`* .css`，`* .scss`等）中的样式默认通过PostCSS传送，因此您不需要使用特定的加载器。
 
 You can simply add PostCSS plugins you want to use to the `.postcssrc.js` file in your project's root directory:
-您可以简单地将您想使用的PostCSS插件添加到项目根目录下的.postcssrc.js文件中：
+您可以简单地将您想使用的PostCSS插件添加到项目根目录下的`.postcssrc.js`文件中：
 
 ``` js
 // https://github.com/michael-ciniawsky/postcss-load-config
@@ -49,12 +49,12 @@ module.exports = {
 ```
 
 See [vue-loader's related documentation](http://vuejs.github.io/vue-loader/en/features/postcss.html) for more details.
-有关更多详细信息，请参阅[vue-loader的相关文档]（http://vuejs.github.io/vue-loader/en/features/postcss.html）。
+更多详细信息，请参阅[vue-loader's related documentation](http://vuejs.github.io/vue-loader/en/features/postcss.html)。
 
 ### Standalone CSS Files
 
 To ensure consistent extraction and processing, it is recommended to import global, standalone style files from your root `App.vue` component, for example:
-为确保一致的提取和处理，建议从根App.vue组件导入全局独立样式文件，例如：
+为确保一致的提取和处理，建议从根`App.vue`组件导入全局独立样式文件，例如：
 
 ``` html
 <!-- App.vue -->
@@ -62,4 +62,4 @@ To ensure consistent extraction and processing, it is recommended to import glob
 ```
 
 Note you should probably only do this for the styles written by yourself for your application. For existing libraries e.g. Bootstrap or Semantic UI, you can place them inside `/static` and reference them directly in `index.html`. This avoids extra build time and also is better for browser caching. (See [Static Asset Handling](static.md))
-请注意，您应该只对自己为您的应用程序编写的样式执行此操作。 对于现有的库例如 Bootstrap或Semantic UI，你可以把它们放在`/ static`中，并直接在`index.html`中引用它们。 这避免了额外的构建时间，对浏览器缓存也更好。 （请参见[静态资产处理](static.md))
+请注意，您应该只对自己为您的应用程序编写的样式执行此操作。 对于现有的库例如 Bootstrap或Semantic UI，你可以把它们放在`/static`中，并直接在`index.html`中引用它们。 这避免了额外的构建时间，对浏览器缓存也更好。 （(See [Static Asset Handling](static.md))
