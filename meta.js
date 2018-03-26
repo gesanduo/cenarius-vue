@@ -150,14 +150,14 @@ module.exports = {
       message: 'Should we include ui demo? (recommended)',
       choices: [
         {
-          name: 'Yes, use vux ui',
-          value: 'vux',
-          short: 'vux'
-        },
-        {
           name: 'Yes, use vant ui',
           value: 'vant',
           short: 'vant'         
+        },
+        {
+          name: 'Yes, use vux ui',
+          value: 'vux',
+          short: 'vux'
         },
         {
           name: 'No, I will handle that myself',
