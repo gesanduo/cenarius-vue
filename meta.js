@@ -150,14 +150,14 @@ module.exports = {
       message: '安装 ui demo ? (推荐)',
       choices: [
         {
+          name: 'Yes, 使用 vant ui',
+          value: 'vant',
+          short: 'vant'               
+        },
+        {
           name: 'Yes, 使用 vux ui',
           value: 'vux',
           short: 'vux'
-        },
-        {
-          name: 'Yes, use vant ui',
-          value: 'vant',
-          short: 'vant'               
         },
         {
           name: 'No, 我自行搞定',
