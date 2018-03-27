@@ -1,19 +1,17 @@
-# Pre-Processors
+# 预处理器
 
-This boilerplate has pre-configured CSS extraction for most popular CSS pre-processors including LESS, Sass, Stylus, and PostCSS. To use a pre-processor, all you need to do is install the appropriate webpack loader for it. For example, to use Sass:
-本模板为大多数流行的CSS预处理器（包括LESS，Sass，Stylus和PostCSS）预先配置了CSS提取。 要使用预处理器，您只需为其安装相应的webpack加载程序即可。 例如，要使用Sass：
+本模板配置了大多数流行的CSS预处理器（包括LESS，Sass，Stylus和PostCSS）。 要使用预处理器，您只需为其安装相应的webpack loader即可。例如，要使用Sass：
 
 ``` bash
 npm install sass-loader node-sass --save-dev
 ```
 
-Note you also need to install `node-sass` because `sass-loader` depends on it as a peer dependency.
 注意：你也需要安装`node-sass`，因为`sass-loader`依赖于它。
 
-### Using Pre-Processors inside Components
+### 在组件里用预处理器
 
 Once installed, you can use the pre-processors inside your `*.vue` components using the `lang` attribute on `<style>` tags:
-安装完成后，您可以使用`<style>`标签上的`lang`属性在`* .vue`组件中使用预处理器：
+安装完成后，您可以在`* .vue`组件中使用`<style>`标签上的`lang`属性：
 
 ``` html
 <style lang="scss">
@@ -21,17 +19,14 @@ Once installed, you can use the pre-processors inside your `*.vue` components us
 </style>
 ```
 
-### A note on Sass syntax
+### Sass语法的一点提示
 
-- `lang="scss"` corresponds to the CSS-superset syntax (with curly braces and semicolons).
-- `lang =“scss”`对应于CSS超集句法（带花括号和分号）。
-- `lang="sass"` corresponds to the indentation-based syntax.
-- `lang =“sass”`对应于基于缩进的语法。
+- `lang="scss"` 对应于CSS超集语法（带花括号和分号）。
+- `lang="sass"` 对应于基于缩进的语法。
 
 ### PostCSS
 
-Styles in `*.vue` files and style files (`*.css`, `*.scss` etc) are piped through PostCSS by default, so you don't need to use a specific loader for it.
-`* .vue`文件和样式文件（`* .css`，`* .scss`等）中的样式默认通过PostCSS传送，因此您不需要使用特定的加载器。
+`* .vue`文件和样式文件（`* .css`，`* .scss`等）默认使用PostCSS，因此您不需要使用特定的加载器。
 
 You can simply add PostCSS plugins you want to use to the `.postcssrc.js` file in your project's root directory:
 您可以简单地将您想使用的PostCSS插件添加到项目根目录下的`.postcssrc.js`文件中：

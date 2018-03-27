@@ -2,11 +2,11 @@
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init macula-projects/cenarius-vux#1.0 my-project`
+> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init macula-projects/cenarius-vue#1.0 my-project`
 
 ## Documentation
 
-- [For this template](http://macula.top/cenarius-vux): common questions specific to this template are answered and each part is described in greater detail
+- [For this template](http://macula.top/cenarius-vue): common questions specific to this template are answered and each part is described in greater detail
 - [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
 
 ## Usage
@@ -15,7 +15,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init macula-projects/cenarius-vux my-project
+$ vue init macula-projects/cenarius-vue my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -24,7 +24,7 @@ $ npm run dev
 This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
 
 ``` bash
-$ vue init macula-projects/cenarius-vux#develop my-project
+$ vue init macula-projects/cenarius-vue#develop my-project
 ```
 
 :warning: **The develop branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**

@@ -1,6 +1,6 @@
 'use strict'
 // Template version: {{ template_version }}
-// see http://macula.top/cenarius-vux for documentation.
+// see http://macula.top/cenarius-vue for documentation.
 
 const path = require('path')
 

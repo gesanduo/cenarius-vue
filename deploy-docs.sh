@@ -5,4 +5,4 @@ cd _book
 git init
 git add -A
 git commit -m 'update book'
-git push -f git@github.com:macula-projects/cenarius-vux.git master:gh-pages
+git push -f git@github.com:macula-projects/cenarius-vue.git master:gh-pages

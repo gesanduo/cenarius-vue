@@ -31,7 +31,7 @@ npm run e2e
 npm test
 {{/if_or}}
 ```
-有关详情，请查看[guide](http://macula.top/cenarius-vux) 、[docs for vue-loader](http://vuejs.github.io/vue-loader) 和 [docs for vux](http://vux.li).
+有关详情，请查看[guide](http://macula.top/cenarius-vue) 、[docs for vue-loader](http://vuejs.github.io/vue-loader) 和 [docs for vux](http://vux.li).
 
 
 ## 项目说明
