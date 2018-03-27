@@ -53,4 +53,4 @@ module.exports = {
 
 任何放在`static/`中的文件都应该使用绝对URL`/static/[filename]`来引用。 如果您将`assetSubDirectory`更改为`assets`，那么这些URL将需要更改为`/assets/[filename]`。
 
-我们将在[与后端集成](backend.md)中了解更多配置文件的相关信息。
+我们将在[集成后端](backend.md)中了解更多配置文件的相关信息。

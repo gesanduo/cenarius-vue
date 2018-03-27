@@ -1,4 +1,4 @@
-# Babel 配置
+# Babel配置
 
 本模板使用[`babel-preset-env`]（https://www.npmjs.com/package/babel-preset-env）来配置babel。 你可以在以下链接阅读到更多相关信息 - http://2ality.com/2017/02/babel-preset-env.html。
 
