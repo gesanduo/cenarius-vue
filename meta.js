@@ -96,12 +96,12 @@ module.exports = {
       message: '选择一种 ESLint preset',
       choices: [
         {
-          name: 'Cenarius (https://www.npmjs.com/package/eslint-config-cenarius)',
+          name: '进阶版 (https://www.npmjs.com/package/eslint-config-cenarius)',
           value: 'cenarius',
           short: 'Cenarius',
         },
         {
-          name: 'Cenarius-base (https://www.npmjs.com/package/eslint-config-cenarius-base)',
+          name: '强制版 (https://www.npmjs.com/package/eslint-config-cenarius-base)',
           value: 'cenarius-base',
           short: 'Cenarius-base',
         },

@@ -1,6 +1,6 @@
 # 预处理器
 
-本模板配置了大多数流行的CSS预处理器（包括LESS，Sass，Stylus和PostCSS）。 要使用预处理器，您只需为其安装相应的webpack loader即可。例如，要使用Sass：
+本模板配置了流行的CSS预处理器（包括LESS，Sass，Stylus和PostCSS）。 要使用预处理器，您只需为其安装相应的webpack loader即可。例如，要使用Sass：
 
 ``` bash
 npm install sass-loader node-sass --save-dev
@@ -10,7 +10,6 @@ npm install sass-loader node-sass --save-dev
 
 ### 在组件里用预处理器
 
-Once installed, you can use the pre-processors inside your `*.vue` components using the `lang` attribute on `<style>` tags:
 安装完成后，您可以在`* .vue`组件中使用`<style>`标签上的`lang`属性：
 
 ``` html
