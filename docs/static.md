@@ -1,15 +1,15 @@
 # 处理 Static Assets
 
 You will notice in the project structure we have two directories for static assets: `src/assets` and `static/`. What is the difference between them?
-你会注意到项目结构用2个静态资源的目录：`src/assets` 和 `static/`，他们的区别是什么？
+你会注意到项目结构有2个静态资源的目录：`src/assets` 和 `static/`，他们的区别是什么？
 
 ### Webpacked Assets
 
 To answer this question, we first need to understand how Webpack deals with static assets. In `*.vue` components, all your templates and CSS are parsed by `vue-html-loader` and `css-loader` to look for asset URLs. For example, in `<img src="./logo.png">` and `background: url(./logo.png)`, `"./logo.png"` is a relative asset path and will be **resolved by Webpack as a module dependency**.
-要回答这个问题，我们首先要理解webpack是怎么处理静态资源的，在'*.vue'组件，所有你的模板和css是用`vue-html-loader`和`css-loader`解析成资源链接，比如在 `<img src="./logo.png">`和 `background: url(./logo.png)`, `"./logo.png"` 是一个相对路径并且会被webpack解析成一个模块依赖。
+要回答这个问题，我们首先要理解webpack是怎么处理静态资源的，在'*.vue'组件，所有你的模板和css是用`vue-html-loader`和`css-loader`解析成 asset URLs，比如在 `<img src="./logo.png">`和 `background: url(./logo.png)`, `"./logo.png"` 是一个相对路径并且会被webpack解析成一个模块依赖。
 
 Because `logo.png` is not JavaScript, when treated as a module dependency, we need to use `url-loader` and `file-loader` to process it. This template has already configured these loaders for you, so you get features such as filename fingerprinting and conditional base64 inlining for free, while being able to use relative/module paths without worrying about deployment.
-由于`logo.png`不是js文件，要作为模块依赖项，我们需要用`url-loader`和 `file-loader`来处理,这个模板已经配置了这些loader，你可以用文件指纹和base64的内联的这些特性，同时使用相对路径而不必担心部署模块。
+由于`logo.png`不是js文件，要作为模块依赖项，我们需要用`url-loader`和 `file-loader`来处理,本模板已经配置了这些loader，你可以用文件指纹和base64的内联的这些特性，同时使用相对路径而不必担心部署模块。
 
 Since these assets may be inlined/copied/renamed during build, they are essentially part of your source code. This is why it is recommended to place Webpack-processed static assets inside `/src`, alongside other source files. In fact, you don't even have to put them all in `/src/assets`: you can organize them based on the module/component using them. For example, you can put each component in its own directory, with its static assets right next to it.
 由于这些资产可能在构建过程中被内联/复制/重命名，因此它们基本上是源代码的一部分。 这就是为什么建议将Webpack处理过的静态资源和其他源文件放在`/src`里面的原因。 实际上，你甚至不需要把它们都放在`/src /assets`中：你可以根据模块/组件使用它们来组织它们。 例如，您可以将每个组件放在其自己的目录中，其静态资产就位于其旁边。
