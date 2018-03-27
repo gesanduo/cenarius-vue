@@ -135,3 +135,10 @@ npm run build-staging
 #生产环境编译
 npm run build
 ```
+
+### 淘宝的NPM镜像配置，设置到~/.npmrc文件中
+```
+registry=https://registry.npm.taobao.org/
+disturl=https://npm.taobao.org/dist
+chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
+```
