@@ -1,42 +1,41 @@
 # Project Structure
 
 ``` bash
-.
-├── build/                      # webpack config files
+├── build/                      # webpack配置文件
 │   └── ...
 ├── config/
-│   ├── index.js                # main project config
+│   ├── index.js                # 主项目配置
 │   └── ...
 ├── src/
-│   ├── main.js                 # app entry file
-│   ├── App.vue                 # main app component
-│   ├── components/             # ui components
+│   ├── main.js                 # app入口文件
+│   ├── App.vue                 # 主页面
+│   ├── components/             # ui组件
 │   │   └── ...
-│   └── assets/                 # module assets (processed by webpack)
+│   └── assets/                 # 静态资源
 │       └── ...
-├── static/                     # pure static assets (directly copied)
+├── static/                     # 纯静态资源（直接复制）
 ├── test/
-│   └── unit/                   # unit tests
-│   │   ├── specs/              # test spec files
-│   │   ├── eslintrc            # config file for eslint with extra settings only for unit tests
-│   │   ├── index.js            # test build entry file
-│   │   ├── jest.conf.js        # Config file when using Jest for unit tests
-│   │   ├── karma.conf.js       # test runner config file when using Karma for unit tests
-│   │   └── setup.js            # file that runs before Jest runs your unit tests
-│   └── e2e/                    # e2e tests
-│   │   ├── specs/              # test spec files
-│   │   ├── custom-assertions/  # custom assertions for e2e tests
-│   │   ├── runner.js           # test runner script
-│   │   └── nightwatch.conf.js  # test runner config file
-├── .babelrc                    # babel config
-├── .editorconfig               # indentation, spaces/tabs and similar settings for your editor
-├── .eslintrc.js                # eslint config
-├── .eslintignore               # eslint ignore rules
-├── .gitignore                  # sensible defaults for gitignore
-├── .postcssrc.js               # postcss config
-├── index.html                  # index.html template
-├── package.json                # build scripts and dependencies
-└── README.md                   # Default README file
+│   └── unit/                   # 单元测试
+│   │   ├── specs/              # 测试规格文件
+│   │   ├── eslintrc            # 用于eslint的配置文件，仅用于单元测试的额外设置
+│   │   ├── index.js            # 测试生成入口文件
+│   │   ├── jest.conf.js        # 使用Jest进行单元测试时配置文件
+│   │   ├── karma.conf.js       # 当使用Karma进行单元测试时，测试运行器配置文件
+│   │   └── setup.js            # 在Jest运行你的单元测试之前运行的文件
+│   └── e2e/                    # e2e测试
+│   │   ├── specs/              # 测试规格文件
+│   │   ├── custom-assertions/  # 自定义e2e测试
+│   │   ├── runner.js           # 测试run脚本
+│   │   └── nightwatch.conf.js  # 测试运行器配置文件
+├── .babelrc                    # babel配置
+├── .editorconfig               # 缩进，空格、制表符和编辑器的类似设置
+├── .eslintrc.js                # eslint配置
+├── .eslintignore               # eslint忽略规则
+├── .gitignore                  # git忽略规则
+├── .postcssrc.js               # postcss配置
+├── index.html                  # index.html模板
+├── package.json                # 构建脚本和依赖关系
+└── README.md                   # 默认的README文件
 ```
 
 ### `build/`
