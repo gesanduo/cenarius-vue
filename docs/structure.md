@@ -47,7 +47,7 @@ This directory holds the actual configurations for both the development server a
 ### `config/index.js`
 
 This is the main configuration file that exposes some of the most common configuration options for the build setup. See [API Proxying During Development](proxy.md) and [Integrating with Backend Framework](backend.md) for more details.
-这是主要配置文件，它配置了打包的一些最常见的配置选项。更多详情看[API Proxying During Development](proxy.md) and [Integrating with Backend Framework](backend.md)
+这是主要配置文件，它配置了打包的一些最常见的配置选项。详情请看[API Proxying During Development](proxy.md) 和[Integrating with Backend Framework](backend.md)
 
 ### `src/`
 
@@ -59,18 +59,18 @@ This is where most of your application code will live in. How to structure every
 This directory is an escape hatch for static assets that you do not want to process with Webpack. They will be directly copied into the same directory where webpack-built assets are generated.
 
 See [Handling Static Assets](static.md) for more details.
-这个目录是放你不想用Webpack处理放静态资源。当webpack打包的时候，他们会直接复制到相应的打包目录。
-更多详情看 [Handling Static Assets](static.md)
+这个目录是放你不想用Webpack处理的静态资源。当webpack打包的时候，他们会直接复制到相应的打包目录。
+详情请看 [Handling Static Assets](static.md)
 
 ### `test/unit`
 
 Contains unit test related files. See [Unit Testing](unit.md) for more details.
-包含单元测试相关文件，更多详情看[Unit Testing](unit.md)
+包含单元测试相关文件，详情请看[Unit Testing](unit.md)
 
 ### `test/e2e`
 
 Contains e2e test related files. See [End-to-end Testing](e2e.md) for more details.
-包含e2e测试相关文件，更多详情看[End-to-end Testing](e2e.md)
+包含e2e测试相关文件，详情请看[End-to-end Testing](e2e.md)
 
 ### `index.html`
 
