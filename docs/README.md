@@ -4,7 +4,7 @@ This boilerplate is targeted towards large, serious projects and assumes you are
 这个标准是针对大的项目，而且假设你是一个熟悉webpack和`vue-loader`的开发者。确保你看了[`vue-loader`'s documentation](https://vue-loader.vuejs.org/) 来熟悉工作流程
 
 If you just want to try out `vue-loader` or whip out a quick prototype, use the [webpack-simple](https://github.com/vuejs-templates/webpack-simple) template instead.
-如果你只是想试行`vue-loader`或者想推出一个快速原型，可以用[webpack-simple](https://github.com/vuejs-templates/webpack-simple)模板来代替。
+如果你只是想试行`vue-loader`或者想快速创建一个模板，可以用[webpack-simple](https://github.com/vuejs-templates/webpack-simple)模板来代替。
 
 ## Quickstart
 
