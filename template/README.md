@@ -45,28 +45,28 @@ src/                  // 项目源码
 --| components/       // 所有页面共享的vue组件
 --| modules/          // 各个模块源码存放处
 ----| index/          // 应用的入口模块，一般情况下必须要有这个目录
-------| assets/       //  存放index模块的图片、js、css等静态资源
-------| layouts/      //  index模块的私有组件
-------| pages/        //  index模块的页面，路由指向这里，不可在其他页面当组件使用
+------| assets/       // 存放index模块的图片、js、css等静态资源
+------| layouts/      // index模块的私有组件
+------| pages/        // index模块的页面，路由指向这里，不可在其他页面当组件使用
 ------| router/         
---------| index.js    //  index模块的页面路由
+--------| index.js    // index模块的页面路由
 ------| App.vue       // 主页面
 ------| index.html    // webpack预编译html入口，文件名与模块名一致
 ------| index.js      // webpack预编译入口，文件名与模块名一致
 ------| ......        // 其他与demo目录一致  
 
-----| demo_vux/       //  demo模块对应源码
-------| assets/       //  存放demo模块的图片、js、css等静态资源
---------| images      //  存放demo模块的图片
-------| components/   //  demo模块的私有组件  
-------| layouts/      //  demo模块的布局页，App.vue不再起作用
-------| mock/         //  存放demo模块的模拟数据
-------| pages/        //  demo模块的页面，路由指向这里，不可在其他页面当组件使用
+----| demo_vux/       // demo模块对应源码
+------| assets/       // 存放demo模块的图片、js、css等静态资源
+--------| images      // 存放demo模块的图片
+------| components/   // demo模块的私有组件  
+------| layouts/      // demo模块的布局页，App.vue不再起作用
+------| mock/         // 存放demo模块的模拟数据
+------| pages/        // demo模块的页面，路由指向这里，不可在其他页面当组件使用
 ------| router/         
---------| index.js    //  demo模块的页面路由
-------| service/      //  demo模块调用远程接口或者模拟数据的API
+--------| index.js    // demo模块的页面路由
+------| service/      // demo模块调用远程接口或者模拟数据的API
 ------| store/
---------| index.js    //  demo模块的vuex定义
+--------| index.js    // demo模块的vuex定义
 --------| ......
 ------| App.vue       // 主页面
 ------| demo.html     // webpack预编译html入口，文件名与模块名一致
