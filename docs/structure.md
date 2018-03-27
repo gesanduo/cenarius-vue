@@ -1,7 +1,6 @@
 # Project Structure
 
 ``` bash
-.
 ├── build/                      # webpack配置文件
 │   └── ...
 ├── config/
