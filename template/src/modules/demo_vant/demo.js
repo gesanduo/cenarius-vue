@@ -3,11 +3,11 @@
  */
 import 'es6-promise/auto'
 import Vue from 'vue'
+import { sync } from 'vuex-router-sync'
+import wechatTitle from 'vue-wechat-title'
 import FastClick from 'fastclick'
 import store from './store'
 import router from './router'
-import { sync } from 'vuex-router-sync'
-import wechatTitle from 'vue-wechat-title'
 import { VueExtendLayout, layout } from '../../plugins/layout'
 
 // 处理vant状态，加载动画、前进后退、位置
