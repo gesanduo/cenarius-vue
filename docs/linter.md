@@ -23,7 +23,7 @@
 
 3. 生成项目时选择“none”，并定义自己的规则。 更多详细信息，请参见[ESLint文档](https://eslint.org/docs/rules/)。
 
-## Fixing Linting Errors
+## 修复Lint错误
 
 您可以运行以下命令让eslint修复它找到的任何错误（并非所有错误都可以修复）：
 
