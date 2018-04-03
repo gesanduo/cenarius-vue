@@ -7,7 +7,6 @@
 ## 文档
 
 - [关于此模板](http://macula.top/cenarius-vue)：回答了一些常见问题，并且每个部分都有详尽解释
-- [关于Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
 - [关于Vue 2.0](http://vuejs.org/guide/)：关于如何使用Vue
 
 ## 使用
@@ -22,33 +21,24 @@ $ npm install
 $ npm run dev
 ```
 
-This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
-这将使用`master`分支来支撑项目。如果您想使用分支模板，请执行以下操作：
+这将使用`master`分支。如果您想使用最新版本的模板，请执行以下操作：
 
 ``` bash
 $ vue init macula-projects/cenarius-vue#develop my-project
 ```
 
-:warning: **The develop branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**
-：警告：**开发分支被认为是不稳定的，可以包含错误或根本不构建，因此使用时需要您自担风险。**
+：警告：**开发分支是不稳定的，可能包含错误或根本不构建，因此使用时需要您自担风险。**
 
-The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
 默认情况下，开发服务器将在端口8080上运行。如果该端口已在您的机器上使用，则将使用下一个空闲端口。
 
-## What's Included
+## 包含命令
 
-- `npm run dev`: first-in-class development experience.
-  - Webpack + `vue-loader` for single file Vue components.
-  - State preserving hot-reload
-  - State preserving compilation error overlay
-  - Lint-on-save with ESLint
+- `npm run dev`：一流的开发体验。
+  - 用于单个Vue文件组件的Webpack +`vue-loader`。
+  - 状态保存热重载
+  - 状态保留编译错误覆盖
+  - 保存Lint
   - Source maps
-- `npm run dev`：一流的开发经验。
-  - 用于单个文件Vue组件的Webpack + `vue-loader`。
-  - 状态保存热重载
-  - 状态保留编译错误覆盖
-  - 使用ESLint进行保存
-  - 源地图
 
 - `npm run build`: Production ready build.
   - JavaScript minified with [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony).

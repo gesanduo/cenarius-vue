@@ -1,10 +1,10 @@
 # 构建命令
 
-所有构建命令都通过[NPM脚本]（https://docs.npmjs.com/misc/scripts）执行。
+所有构建命令都通过[NPM脚本](https://docs.npmjs.com/misc/scripts)执行。
 
 ### `npm run dev`
 
->启动一个Node.js本地开发服务器。 更多详细信息，请参阅[开发期间的API代理](proxy.md)。
+> 启动一个Node.js本地开发服务器。 更多详细信息，请参阅[开发期间的API代理](proxy.md)。
 
 - 用于单个Vue文件组件的Webpack +`vue-loader`。
 - 状态保存热重载
@@ -16,14 +16,14 @@
 
 > 构建生产环境的资源。 更多详细信息，请参见[与后端集成](backend.md)。
 
-- 使用[UglifyJS v3]做JS压缩（https://github.com/mishoo/UglifyJS2/tree/harmony）缩小JavaScript。
-- 用[html-minifier]做HTML压缩（https://github.com/kangax/html-minifier）缩小了HTML。
-- 使用[cssnano]将所有组件的CSS提取到单个文件中，并压缩（https://github.com/ben-eb/cssnano）。
+- 使用[UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony)做JS压缩缩小JavaScript。
+- 用[html-minifier](https://github.com/kangax/html-minifier)做HTML压缩缩小HTML。
+- 使用[cssnano](https://github.com/ben-eb/cssnano)将所有组件的CSS提取到单个文件中，并压缩。
 - 以哈希作为版本的静态资源可实现长期缓存，自动生成具有合适URL的`index.html`。
 
 ### `npm run unit`
 
-> 使用[Jest]在JSDOM中运行单元测试（https://facebook.github.io/jest/docs/getting-started.html。更多详细信息，请参见[单元测试](unit.md)。
+> 使用[Jest](https://facebook.github.io/jest/docs/getting-started.html)在JSDOM中运行单元测试。更多详细信息，请参见[单元测试](unit.md)。
 
 - 在测试文件中支持ES2015+。
 - Easy [mocking](https://facebook.github.io/jest/docs/mock-functions.html).
