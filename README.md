@@ -1,22 +1,18 @@
-# vue-webpack-boilerplate
+# vue-webpack-模板
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
-> 全功能的Webpack设置，包括热重载，省电保存，单元测试和CSS提取。
+> 全功能Webpack，包含热重载，单元测试和CSS提取。
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init macula-projects/cenarius-vue#1.0 my-project`
-> 此模板与Vue 2.0兼容。对于Vue 1.x，请使用以下命令：`vue init macula-projects / cenarius-vue＃1.0 my-project`
+> 此模板与Vue 2.0兼容。
 
-## Documentation
+## 文档
 
-- [For this template](http://macula.top/cenarius-vue): common questions specific to this template are answered and each part is described in greater detail
-- [For this template](http://macula.top/cenarius-vue):回答更更详细地描述此模板特有的常见问题
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
-- [For Vue 2.0](http://vuejs.org/guide/):关于如何使用Vue的信息，并非特定于此模板
+- [关于此模板](http://macula.top/cenarius-vue)：回答了一些常见问题，并且每个部分都有详尽解释
+- [关于Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+- [关于Vue 2.0](http://vuejs.org/guide/)：关于如何使用Vue
 
-## Usage
+## 使用
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
-这是[vue-cli](https://github.com/vuejs/vue-cli).的项目模板。 **建议使用npm 3+来创建更高效​​的依赖树**
+这是[vue-cli](https://github.com/vuejs/vue-cli)的项目模板。 **建议使用npm 3+来创建更高效​​的依赖树**
 
 ``` bash
 $ npm install -g vue-cli
