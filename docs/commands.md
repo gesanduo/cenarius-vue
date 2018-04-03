@@ -26,7 +26,7 @@
 > 使用[Jest](https://facebook.github.io/jest/docs/getting-started.html)在JSDOM中运行单元测试。更多详细信息，请参见[单元测试](unit.md)。
 
 - 在测试文件中支持ES2015+。
-- Easy [mocking](https://facebook.github.io/jest/docs/mock-functions.html).
+- 轻松[mocking](https://facebook.github.io/jest/docs/mock-functions.html).
 
 ### `npm run e2e`
 

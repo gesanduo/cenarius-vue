@@ -40,41 +40,31 @@ $ vue init macula-projects/cenarius-vue#develop my-project
   - 保存Lint
   - Source maps
 
-- `npm run build`: Production ready build.
-  - JavaScript minified with [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony).
-  - HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
-  - CSS across all components extracted into a single file and minified with [cssnano](https://github.com/ben-eb/cssnano).
-  - Static assets compiled with version hashes for efficient long-term caching, and an auto-generated production `index.html` with proper URLs to these generated assets.
-  - Use `npm run build --report`to build with bundle size analytics.
-- `npm run buil`：生产就绪版本。
-  - 使用 [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony)缩小JavaScript.
-  - 用 [html-minifier](https://github.com/kangax/html-minifier)缩小HTML.
-  - 将所有组件的CSS提取到单个文件中，并使用 [cssnano](https://github.com/ben-eb/cssnano)进行缩小.
-  - 静态资产使用版本哈希编译以实现高效的长期缓存，以及自动生成的生成`index.html` 并为这些生成的资产提供适当的URL.
-  - 使用 `npm run build --report`来构建 bundle.
+- `npm run build`：构建生产版本。
+  - 使用[UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony)做JS压缩缩小JavaScript。
+  - 用[html-minifier](https://github.com/kangax/html-minifier)做HTML压缩缩小HTML。
+  - 使用[cssnano](https://github.com/ben-eb/cssnano)将所有组件的CSS提取到单个文件中，并压缩。
+  - 以哈希作为版本的静态资源可实现长期缓存，自动生成具有合适URL的`index.html`。
+  - 使用 `npm run build --report`来进行bundle大小分析.
 
-- `npm run unit`: Unit tests run in [JSDOM](https://github.com/tmpvar/jsdom) with [Jest](https://facebook.github.io/jest/), or in PhantomJS with Karma + Mocha + karma-webpack.
-  - Supports ES2015+ in test files.
-  - Easy mocking.
-- `npm run unit`：单元测试用[JSDOM](https://github.com/tmpvar/jsdom)在[Jest](https://facebook.github.io/jest/)中运行，或者在PhantomJS中用Karma + Mocha + karma-webpack。
-  - 在测试文件中支持ES2015 +。
-  - 轻松mocking。
+- `npm run unit`：使用[Jest](https://facebook.github.io/jest/docs/getting-started.html)在[JSDOM](https://github.com/tmpvar/jsdom)中运行单元测试，或者用Karma + Mocha + karma-webpack在PhantomJS中运行。
+  - 在测试文件中支持ES2015+。
+  - 轻松mocking。
 
 - `npm run e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
   - Run tests in multiple browsers in parallel.
   - Works with one command out of the box:
     - Selenium and chromedriver dependencies automatically handled.
     - Automatically spawns the Selenium server.
-- `npm run e2e`：使用[Nightwatch](http://nightwatchjs.org/)进行端到端测试。
-   - 在多个浏览器中并行运行测试。
-   - 开箱即用一个命令：
-     -  Selenium和chromedriver依赖关系自动处理。
-     - 自动生成Selenium服务器。
+- `npm run e2e`：使用[Nightwatch](http://nightwatchjs.org/)运行端到端测试。
+  - 在多个浏览器中并行测试。
+  - 开箱即用一个命令：
+    - 自动处理Selenium和chromedriver依赖关系。
+    - 自动生成Selenium服务器。
 
-### Fork It And Make Your Own
+### Fork
 
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-你可以fork这个repo来创建你自己的样板，并用`vue-cli`来使用它：
+你可以fork这个仓库来创建你自己的模板，并用`vue-cli`来使用它：
 
 ``` bash
 vue init username/repo my-project
