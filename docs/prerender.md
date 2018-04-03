@@ -1,6 +1,5 @@
 # 为SEO做预渲染
 
-which has been tested for use with Vue. For pages that _do_ frequently change, [Prerender.io](https://prerender.io/) and [Netlify](https://www.netlify.com/pricing) both offer plans for regularly re-prerendering your content for search engines.
 如果你想预先渲染不常发生变化的路由，请使用这个Webpack插件：[prerender-spa-plugin](https://www.npmjs.com/package/prerender-spa-plugin)。 对于频繁更改的网页，[Prerender.io](https://prerender.io/)和[Netlify](https://www.netlify.com/pricing)都会为SEO提供定期预渲染。
 
 ## 使用`prerender-spa-plugin`
