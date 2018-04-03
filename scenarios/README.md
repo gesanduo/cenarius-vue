@@ -12,7 +12,7 @@
 
 1. 'minimal'：它基本上回答“不”，它没有路由，没有eslint，没有测试
 2. “full”：它对每个选择都回答“是”。使用路由，使用lint强制版，使用全面测试（jest＆e2e）
-3. 'full-airbnb-karma'：像'full'一样，但是使用lint强制版代替进阶版，使用karma代替jest。
+3. 'full-karma-cenarius-base'：像'full'一样，但是使用lint强制版代替进阶版，使用karma代替jest。
 
 ## 如何使用?
 
