@@ -43,31 +43,31 @@ module.exports = {
   {{/if_eq}}
   // add your custom rules here
   rules: {
-    {{#if_eq lintConfig "cenarius"}}
-    // allow async-await
-    'generator-star-spacing': 'off',
-    {{/if_eq}}
-    {{#if_eq lintConfig "cenarius-base"}}
-    // don't require .vue extension when importing
-    'import/extensions': ['error', 'always', {
-      js: 'never',
-      vue: 'never'
-    }],
-    // disallow reassignment of function parameters
-    // disallow parameter object manipulation except for specific exclusions
-    'no-param-reassign': ['error', {
-      props: true,
-      ignorePropertyModificationsFor: [
-        'state', // for vuex state
-        'acc', // for reduce accumulators
-        'e' // for e.returnvalue
-      ]
-    }],
-    // allow optionalDependencies
-    'import/no-extraneous-dependencies': ['error', {
-      optionalDependencies: ['test/unit/index.js']
-    }],
-    {{/if_eq}}
+    // {{#if_eq lintConfig "cenarius"}}
+    // // allow async-await
+    // 'generator-star-spacing': 'off',
+    // {{/if_eq}}
+    // {{#if_eq lintConfig "cenarius-base"}}
+    // // don't require .vue extension when importing
+    // 'import/extensions': ['error', 'always', {
+    //   js: 'never',
+    //   vue: 'never'
+    // }],
+    // // disallow reassignment of function parameters
+    // // disallow parameter object manipulation except for specific exclusions
+    // 'no-param-reassign': ['error', {
+    //   props: true,
+    //   ignorePropertyModificationsFor: [
+    //     'state', // for vuex state
+    //     'acc', // for reduce accumulators
+    //     'e' // for e.returnvalue
+    //   ]
+    // }],
+    // // allow optionalDependencies
+    // 'import/no-extraneous-dependencies': ['error', {
+    //   optionalDependencies: ['test/unit/index.js']
+    // }],
+    // {{/if_eq}}
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
